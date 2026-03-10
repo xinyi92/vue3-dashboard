@@ -19,7 +19,8 @@ A small admin dashboard demo built with Vue 3 + TypeScript.
 
 ## Project Structure
 
-```src
+```
+src
  ├ components
  │   ├ StatCard.vue
  │   └ Button.vue
