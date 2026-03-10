@@ -1,9 +1,47 @@
-# Vue3 Dashboard
+# Vue3 Dashboard Demo
 
-Simple admin dashboard built with Vue 3 + TypeScript.
+A small admin dashboard demo built with Vue 3 + TypeScript.
 
-Features
-- Dashboard statistics
+## Tech Stack
+
+- Vue 3
+- TypeScript
+- Vite
+- Composition API
+
+## Features
+
+- Dashboard statistics cards
 - User table
-- TypeScript models
-- Component-based architecture
+- Toggle user status
+- Reusable components
+- Composable state management
+
+## Project Structure
+
+src
+ ├ components
+ │   ├ StatCard.vue
+ │   └ Button.vue
+ │
+ ├ composables
+ │   └ useUsers.ts
+ │
+ ├ data
+ │   └ users.ts
+ │
+ ├ types
+ │   └ user.ts
+ │
+ └ pages
+     └ Dashboard.vue
+
+## Setup
+
+Install dependencies
+
+npm install
+
+Run development server
+
+npm run dev
