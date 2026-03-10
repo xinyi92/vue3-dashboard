@@ -45,3 +45,6 @@ npm install
 Run development server
 
 npm run dev
+
+## Demo Link
+[Link to demo](https://xinyidashboarddemo.netlify.app/)
