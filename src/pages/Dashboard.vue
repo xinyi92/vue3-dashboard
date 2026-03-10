@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import StatCard from '../components/StatCard.vue'
 import Button from '../components/Button.vue'
+import StatusBadge from '../components/StatusBadge.vue'
 import { useUsers } from '../composables/useUsers'
 // composable used to separate user state logic from UI
 const { userList, totalUsers, activeUsers, toggleUserStatus } = useUsers()
@@ -31,7 +32,7 @@ const dashboard = [
             <tbody>
                 <tr v-for="user in userList" :key="user.id">
                     <td>{{ user.name }}</td>
-                    <td>{{ user.status }}</td>
+                    <td><StatusBadge :title="user.status" /></td>
                     <td>
                         <Button 
                         :title="user.status === 'active' ? 'Deactivate' : 'Activate'"
